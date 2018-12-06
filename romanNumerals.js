@@ -1,6 +1,13 @@
 function translateRomanNumeral (romanNumeral) {
-  // Write your code here, and
-  // return your final answer.
+
+  //Check if valid digits
+  for(let i of romanNumeral) {
+    if (Object.keys(DIGIT_VALUES).indexOf(i) < 0)
+      return null;
+  }
+
+  
+
 }
 
 var DIGIT_VALUES = {
